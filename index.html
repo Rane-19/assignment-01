@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="form-container">
+        <div class="form">
+          <h2>Signup</h2>
+          <form>
+            <!-- First form -->
+            <fieldset>
+            <legend>Account Info</legend>
+            
+            <input type="text" 
+            name="name" 
+            id="name" 
+            placeholder="Full Name..." 
+            required 
+            pattern="[a-zA-Z][a-zA-Z ]+"
+            title="Name can only contain alphabetical characters"
+            aria-label="Name can only contain alphabetical characters"
+          >
+          <input type="text" 
+            name="username" 
+            id="username" 
+            placeholder="Username..." 
+            required 
+            pattern="[a-zA-Z0-9]+"
+            title="Username can only contain alpha-numeric characters"
+            aria-label="Username containing only alpha-numeric characters"
+          >
+          <label for="password" class="visually-hidden">Password</label>
+          <input type="password" name="password" id="password" placeholder="Password... min 8 chars" required>
+          </fieldset>
+          <!-- Second form -->
+          <fieldset>
+            <legend>Programming Languages</legend>
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox" name="html" id="html" value="html">
+                  <label for="html">HTML</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="css" id="css" value="css">
+                  <label for="css">CSS</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="sass" id="sass" value="sass">
+                  <label for="js">Sass</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="js" id="js" value="js">
+                  <label for="python">Javascript</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="php" id="php" value="php">
+                  <label for="sass">PHP</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="python" id="python" value="python">
+                  <label for="sass">Python</label>
+                </td>
+              </tr>
+              <!-- Add more table rows here -->
+            </table>
+          </fieldset>
+          <!-- Ssecond form .5 -->
+          <fieldset>
+            <legend>DevOps</legend>
+            <div class="one"></div>
+            <label class="onlyOne">Tools</label>
+            <input type="checkbox" name="git" id="git" value="git">
+            <label for="git">GIT</label>
+            <input type="checkbox" name="gulp" id="gulp" value="gulp">
+            <label for="gulp">Gulp</label>
+            <input type="checkbox" name="webpack" id="webpack" value="webpack">
+            <label for="webpack">Webpack</label>
+          </fieldset>
+          
+
+          <!-- Third form -->
+
+          <fieldset>
+            
+            <legend>Experience</legend>
+
+            <label class="onlyOne">Overall Experience</label>
+
+            <input type="radio" name="beginner" id="beginner">
+            <label for="beginner">Beginner</label>
+
+            <input type="radio" name="intermediate" id="intermediate">
+            <label for="intermediate">Intermediate</label>
+
+            <input type="radio" name="advanced" id="advanced">
+            <label for="advanced">Advanced</label>
+            
+          </fieldset>
+          <!-- Fourth form -- heard by - comment -->
+          <fieldset>
+            <legend>Other</legend>
+            <label for="heardBy">How did you hear about us?</label>
+            <select name="heardBy" id="heardBy">
+              <option value="">Please Select...</option>
+              <optgroup label="Person">
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="colleague">Colleague</option>
+              </optgroup>
+              <optgroup label="Media">
+                <option value="internet">Internet</option>
+                <option value="radio">Radio</option>
+                <option value="TV">TV</option>
+                <option value="newspaper">Newspaper</option>
+               </optgroup>
+               <optgroup>
+                <option value="magic">Magic!</option>
+                <option value="other">Other...</option>
+               </optgroup>
+            </select>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="40" rows="6"></textarea>
+          </fieldset>
+          <!-- <input type="hidden" name="userid" value="jbsolo"> -->
+          <input type="submit" value="Submit">
+          <input type="reset" value="Clear Form">
+          </form>
+        </div>
+
+      </section>
+    </main>
+    <footer><p>&copy; 2023 Lourane Sobrepena</p></footer>
+
+      
+    <!--  
+
+*** Form should have a max-width of
+480px and should be centred along
+the left / right axis within the
+browser
+
+Form should post data to #
+
+Select Menu Values
+
+Person
+  Friend
+  Family
+  Colleague
+
+Media
+  Internet
+  Radio
+  TV
+  Newspaper
+Other
+  Magic!
+  Other...
+-->
+  </body>
+</html>
